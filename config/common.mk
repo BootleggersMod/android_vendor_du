@@ -94,8 +94,8 @@ endif
 ANDROID_VERSION = 7.1.2
 DU_VERSION = v11.3
 ifndef DU_BUILD_TYPE
-    DU_BUILD_TYPE := UNOFFICIAL
-    PLATFORM_VERSION_CODENAME := UNOFFICIAL
+    DU_BUILD_TYPE := SHISHUlT
+    PLATFORM_VERSION_CODENAME := SHISHUlT
 endif
 
 # Build DU-Updater for only official, rc and weeklies
@@ -131,3 +131,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.du.version=$(DU_VERSION) \
     ro.mod.version=$(DU_BUILD_TYPE)-v11.3
+    
+include vendor/bootleggers/booty.mk
